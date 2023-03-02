@@ -1,49 +1,48 @@
 .Books {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 100px;
-    padding: 20px;
-    background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 100px;
+  padding: 20px;
+  background-color: #fff;
 }
 
 .B1 h2 {
-    font-size: 24px ;
-    margin: 0;
+  font-size: 24px;
+  margin: 0;
 }
 
 .B1 h3 {
-    font-size: 15px ;
-    margin: 0;
-    color: #dc8787;
+  font-size: 15px;
+  margin: 0;
+  color: #dc8787;
 }
 
-
 .B1 h4 {
-    font-size: 15px ;
-    margin: 0;
+  font-size: 15px;
+  margin: 0;
 }
 
 .B2 {
-    display: flex;
-    flex-direction: column;
-    align-items: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
 }
 
 .B2 h2 {
-    font-size: 20px ;
-    margin: 0;
-    font-weight: 100;
+  font-size: 20px;
+  margin: 0;
+  font-weight: 100;
 }
 
 .B2 button {
-    width: 150px;
-    padding: 5px;
-    color: #fff;
-    background-color: #0290FF;
+  width: 150px;
+  padding: 5px;
+  color: #fff;
+  background-color: #0290ff;
 }
 
 .B2 h3 {
-    font-size: 15px ;
-    margin: 0;
-    font-weight: 50;
+  font-size: 15px;
+  margin: 0;
+  font-weight: 50;
 }

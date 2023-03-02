@@ -1,22 +1,22 @@
-Form {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
+form {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
 
 .input1 {
-    width: 400px;
-    padding: 10px;
+  width: 400px;
+  padding: 10px;
 }
 
 .input2 {
-    width: 100px;
-    padding: 10px;
+  width: 100px;
+  padding: 10px;
 }
 
 form button {
-    width: 150px;
-    padding: 5px;
-    color: #fff;
-    background-color: #0290FF;
+  width: 150px;
+  padding: 5px;
+  color: #fff;
+  background-color: #0290ff;
 }

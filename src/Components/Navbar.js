@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 import Person from './download.png';
 
 function Navbar() {
@@ -10,13 +11,13 @@ function Navbar() {
           Bookstore CMS
         </li>
         <li>
-          <a href="./Books">Books</a>
+          <Link to="./Booklist">Books</Link>
         </li>
         <li>
-          <a href="./Categories">Categories</a>
+          <Link to="./Categories">Categories</Link>
         </li>
       </ul>
-      <img src="Person" alt="Person" />
+      <img className="person" src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="Person" />
     </div>
   );
 }

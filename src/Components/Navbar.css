@@ -15,6 +15,10 @@ ul {
   list-style: none;
 }
 
+.person {
+  width: 30px;
+}
+
 li {
   margin-left: 20px;
   color: #d3ecff;

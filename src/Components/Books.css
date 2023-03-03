@@ -46,3 +46,13 @@
   margin: 0;
   font-weight: 50;
 }
+
+.comps {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.comps h3 {
+  color: #3988c4;
+}

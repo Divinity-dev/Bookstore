@@ -11,7 +11,7 @@ function Navbar() {
           Bookstore CMS
         </li>
         <li>
-          <Link to="./Booklist">Books</Link>
+          <Link to="/">Books</Link>
         </li>
         <li>
           <Link to="./Categories">Categories</Link>

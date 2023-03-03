@@ -55,7 +55,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [Bookstore] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> This project is an app for adding and removing books with to a store. It also has a category which is a group for different kind of books.
 
 **[Bookstore]** is a...
 
@@ -63,7 +63,7 @@ After you're finished please remove all the comments and instructions!
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+>This project has been built with react.js, jsx and css
 
 <details>
   <summary>Client</summary>
@@ -90,7 +90,7 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+> This project has these features
 
 - **[Multipage route]**
 - **[Add Books]**
@@ -113,13 +113,11 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
-To get a local copy up and running, follow these steps.
+>To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+In order to run this project you need: You need to have node npm installed in your computer
 
 <!--
 Example command:
@@ -169,7 +167,7 @@ Example command:
 
 ### Run tests
 
-To run tests, run the following command:npm i react-route-dom
+To run tests, run the following command:npm test
 
 <!--
 Example command:
@@ -181,7 +179,7 @@ Example command:
 
 ### Deployment
 
-You can deploy this project using:
+You can deploy this project using: Github pages
 
 <!--
 Example:
@@ -197,7 +195,7 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+> This project was built by Asiriuwa Divine. Social media handles below:
 
 👤 **Author1**
 
@@ -212,7 +210,7 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+> These are future features to be added to the project
 
 - **[Add Books]**
 - **[Remove Books]**
@@ -234,9 +232,9 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
+> In my bid to make this project even bigger, I welcome contibution from anyone willing to improve on the project. Thank you.
 
-If you like this project...
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -244,9 +242,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-Special credit goes to themicroverse team.
+> Special credit goes to the microverse team.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -254,17 +250,6 @@ Special credit goes to themicroverse team.
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 

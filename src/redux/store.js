@@ -4,7 +4,7 @@ import categoriesslice from './categories/categoriesslice';
 
 export default configureStore({
   reducer: {
-    Book: Bookslice.reducer,
-    categories: categoriesslice.reducer,
+    Book: Bookslice,
+    category: categoriesslice,
   },
 });

@@ -2,7 +2,6 @@
 import { PropTypes } from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/Books/Bookslice';
-import { checkStatus } from '../redux/categories/categoriesslice';
 
 function Book({ book }) {
   const dispatch = useDispatch();
@@ -20,7 +19,6 @@ function Book({ book }) {
         <div className="comps">
           <h3>comments</h3>
           <button className="btn" type="button" onClick={() => dispatch(removeBook({ item_id }))}>remove</button>
-          <button className="btn" type="button" onClick={() => dispatch(checkStatus())}>check status</button>
           <h3>Edit</h3>
 
         </div>

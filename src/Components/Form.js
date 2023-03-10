@@ -19,6 +19,8 @@ function Form() {
   const handlesubmit = (e) => {
     e.preventDefault();
     dispatch(addBook({ item_id, author, title }));
+    setauthor('');
+    settitle('');
   };
   return (
     <form onSubmit={(e) => handlesubmit(e)}>

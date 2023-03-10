@@ -1,36 +1,50 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+
+const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/TMW5b3PhbqVNgRzyiBCv/books';
+
+export const getData = createAsyncThunk('Books/getData', async () => {
+  await fetch(url).then((res) => res.json);
+});
+
+export const addBook = createAsyncThunk('Book/getData', async (Book) => {
+  await fetch(`${url}`, {
+    method: 'POST',
+    body: JSON.stringify(Book),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+  return Book;
+});
+
+export const removeBook = createAsyncThunk('removeBooks', async (id) => {
+  await fetch(`${url}/${id}`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+  return id;
+});
 
 export const bookslice = createSlice({
   name: 'Book',
   initialState: {
-    Books: [{
-      item_id: 'item1',
-      title: 'The Great Gatsby',
-      author: 'John Smith',
-      category: 'Fiction',
-    },
-    {
-      item_id: 'item2',
-      title: 'Anna Karenina',
-      author: 'Leo Tolstoy',
-      category: 'Fiction',
-    },
-    {
-      item_id: 'item3',
-      title: 'The Selfish Gene',
-      author: 'Richard Dawkins',
-      category: 'Nonfiction',
-    }],
+    Books: [],
   },
-  reducers: {
-    addBook: (state, action) => {
+  reducers: {},
+  extraReducers: (builder) => {
+    builder.addCase(getData.fulfilled, (state, action) => {
+      const newState = state;
+      newState.Books = action.payload;
+    });
+    builder.addCase(addBook.fulfilled, (state, action) => {
       state.Books.push(action.payload);
-    },
-    removeBook: (state, action) => {
+    });
+    builder.addCase(removeBook.fulfilled, (state, action) => {
       state.Books = state.Books.filter((book) => book.item_id !== action.payload.item_id);
-    },
+    });
   },
 });
 
-export const { addBook, removeBook } = bookslice.actions;
 export default bookslice.reducer;

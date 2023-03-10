@@ -18,7 +18,7 @@ function Book({ book }) {
         <h3>{author}</h3>
         <div className="comps">
           <h3>comments</h3>
-          <button className="btn" type="button" onClick={() => dispatch(removeBook({ item_id }))}>remove</button>
+          <button className="btn" type="button" onClick={() => dispatch(removeBook(item_id))}>remove</button>
           <h3>Edit</h3>
 
         </div>

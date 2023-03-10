@@ -1,24 +1,29 @@
 /* eslint-disable camelcase */
 import './Form.css';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../redux/Books/Bookslice';
 
 function Form() {
   const dispatch = useDispatch();
   const [title, settitle] = useState('');
   const [author, setauthor] = useState('');
-  const { Books } = useSelector((state) => state.Book);
   const handletitle = (e) => {
     settitle(e.target.value);
   };
   const handleauthor = (e) => {
     setauthor(e.target.value);
   };
-  const item_id = `item${Books.length + 1}`;
+  const item_id = uuidv4();
   const handlesubmit = (e) => {
     e.preventDefault();
-    dispatch(addBook({ item_id, author, title }));
+    dispatch(addBook({
+      item_id,
+      title,
+      author,
+      category: 'Action',
+    }));
     setauthor('');
     settitle('');
   };

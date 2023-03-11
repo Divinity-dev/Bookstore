@@ -18,11 +18,11 @@ form h2 {
 .input1 {
   width: 600px;
   padding: 10px;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .input2 {
-  width: 200px;
+  width: 100px;
   padding: 10px;
 }
 
@@ -31,4 +31,5 @@ form button {
   padding: 5px;
   color: #fff;
   background-color: #0290ff;
+  margin-right: 20px;
 }

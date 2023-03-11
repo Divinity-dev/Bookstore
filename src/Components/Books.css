@@ -19,13 +19,15 @@ h3 {
 
 .B1 h3 {
   font-size: 15px;
-  margin: 0;
-  color: #dc8787;
+  margin-bottom: 10px;
+  color: #c5c5c5;
 }
 
 .B1 h4 {
   font-size: 15px;
   margin: 0;
+  color: #c5c5c5;
+  font-weight: 400;
 }
 
 .B1 {
@@ -33,6 +35,7 @@ h3 {
   flex-direction: column;
   justify-content: left;
   text-align: left;
+  width: 30%;
 }
 
 .B2 {
@@ -40,6 +43,8 @@ h3 {
   flex-direction: column;
   justify-content: left;
   text-align: left;
+  width: 30%;
+  margin-left: 200px;
 }
 
 .B2 h2 {
@@ -55,6 +60,11 @@ h3 {
   background-color: #0290ff;
 }
 
+.B1 button {
+  flex-basis: 1;
+  padding: 0;
+}
+
 .B2 h3 {
   font-size: 15px;
   margin: 0;
@@ -64,11 +74,14 @@ h3 {
 .comps {
   display: flex;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 12px;
+  width: 100px;
 }
 
-.comps h3 {
-  color: #3988c4;
+.comps a {
+  color: #a5c5e1;
+  margin-left: 20px;
+  font-weight: 700;
 }
 
 .btn {
@@ -80,11 +93,20 @@ h3 {
 
 .mid-content {
   display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
 }
 
 .mid-content img {
-  width: 60px;
+  width: 80px;
   height: 60px;
+}
+
+
+.mid-content h3 {
+  color: #c6c6c6;
 }
 
 span {

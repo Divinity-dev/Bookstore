@@ -10,6 +10,7 @@ function Book({ book }) {
     title,
     author,
   } = book;
+  const url = 'https://image.similarpng.com/very-thumbnail/2021/07/Blue-loading-icon-design-illustration-on-transparent-background-PNG.png';
   return (
     <div id={item_id} className="Books">
       <div className="B1">
@@ -20,7 +21,13 @@ function Book({ book }) {
           <h3>comments</h3>
           <button className="btn" type="button" onClick={() => dispatch(removeBook(item_id))}>remove</button>
           <h3>Edit</h3>
-
+        </div>
+      </div>
+      <div className="mid-content">
+        <img src={url} alt="loading" />
+        <div className="loading">
+          <span>64%</span>
+          <h3>completed</h3>
         </div>
       </div>
       <div className="B2">

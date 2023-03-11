@@ -61,7 +61,6 @@ h3 {
 }
 
 .B1 button {
-  flex-basis: 1;
   padding: 0;
 }
 
@@ -103,7 +102,6 @@ h3 {
   width: 80px;
   height: 60px;
 }
-
 
 .mid-content h3 {
   color: #c6c6c6;

@@ -30,10 +30,13 @@ function Form() {
   return (
     <form onSubmit={(e) => handlesubmit(e)}>
       <div>
-        <input value={title} placeholder="Book title" className="input1" onChange={(e) => handletitle(e)} />
+        <h2>Add a new book</h2>
+        <div className="inputs">
+          <input value={title} placeholder="Book title" className="input1" onChange={(e) => handletitle(e)} />
+          <input value={author} placeholder="author" className="input2" onChange={(e) => handleauthor(e)} />
+          <button type="submit">Add book</button>
+        </div>
       </div>
-      <input value={author} placeholder="author" className="input2" onChange={(e) => handleauthor(e)} />
-      <button type="submit">Add book</button>
     </form>
   );
 }

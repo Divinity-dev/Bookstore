@@ -1,12 +1,24 @@
 form {
   display: flex;
+  flex-direction: column;
+}
+
+form h2 {
+  text-align: left;
+  margin-left: 100px;
+  color: rgb(136, 136, 136);
+}
+
+.inputs {
+  display: flex;
   justify-content: space-evenly;
   margin-top: 20px;
 }
 
 .input1 {
-  width: 400px;
+  width: 600px;
   padding: 10px;
+  margin-left: 20px;
 }
 
 .input2 {
@@ -19,4 +31,5 @@ form button {
   padding: 5px;
   color: #fff;
   background-color: #0290ff;
+  margin-right: 20px;
 }

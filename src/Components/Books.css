@@ -11,21 +11,40 @@
   margin: 0;
 }
 
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
 .B1 h3 {
   font-size: 15px;
-  margin: 0;
-  color: #dc8787;
+  margin-bottom: 10px;
+  color: #c5c5c5;
 }
 
 .B1 h4 {
   font-size: 15px;
   margin: 0;
+  color: #c5c5c5;
+  font-weight: 400;
+}
+
+.B1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  width: 30%;
 }
 
 .B2 {
   display: flex;
   flex-direction: column;
-  justify-content: right;
+  justify-content: left;
+  text-align: left;
+  width: 30%;
+  margin-left: 200px;
 }
 
 .B2 h2 {
@@ -41,6 +60,10 @@
   background-color: #0290ff;
 }
 
+.B1 button {
+  padding: 0;
+}
+
 .B2 h3 {
   font-size: 15px;
   margin: 0;
@@ -50,11 +73,14 @@
 .comps {
   display: flex;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 12px;
+  width: 100px;
 }
 
-.comps h3 {
-  color: #3988c4;
+.comps a {
+  color: #a5c5e1;
+  margin-left: 20px;
+  font-weight: 700;
 }
 
 .btn {
@@ -62,4 +88,26 @@
   width: 60px;
   margin-left: 10px;
   padding: 2px;
+}
+
+.mid-content {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.mid-content img {
+  width: 80px;
+  height: 60px;
+}
+
+.mid-content h3 {
+  color: #c6c6c6;
+}
+
+span {
+  margin: 0;
+  padding: 0;
 }
